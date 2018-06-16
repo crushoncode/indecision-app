@@ -16,33 +16,28 @@ const template = (
 </div>
 );
 
-// const userName = 'Serina';
-// const userAge = 20;
-// const userLocation = 'Melbourne';
-
-// const templateTwo = (
-//     <div>
-//         <h1>{userName.toUpperCase()}</h1>
-//         <p>Age: {userAge}</p>
-//         <p>Location: {userLocation}</p>
-//     </div>
-// );
-
 const user = {
     name: 'Serina',
     age: 20,
     location: 'Melbourne'
 };
 
+function getLocation() {
+    if (location) {
+        return location;
+    } else {
+        return 'Unknown';
+    }
+}
 const templateTwo = (
     <div>
         <h1>{user.name}</h1>
-        <p>{user.age}</p>
-        <p>{user.location}</p>
+        <p>Age: {user.age}</p>
+        <p>Location: {getLocation(user.location)}</p>
     </div>
 );
 
 const appRoot = document.getElementById('app');
 
-ReactDOM.render(template, appRoot);
+ReactDOM.render(templateTwo, appRoot);
 
