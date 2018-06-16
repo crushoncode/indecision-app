@@ -17,23 +17,19 @@ const template = (
 );
 
 const user = {
-    name: 'Serina',
-    age: 20,
-    location: 'Melbourne'
+    age: 20
 };
 
-function getLocation() {
+function getLocation(location) {
     if (location) {
-        return location;
-    } else {
-        return 'Unknown';
+        return <p>Location: {location}</p>;
     }
 }
 const templateTwo = (
     <div>
-        <h1>{user.name}</h1>
+        <h1>{user.name ? user.name : 'Anonymous'}</h1>
         <p>Age: {user.age}</p>
-        <p>Location: {getLocation(user.location)}</p>
+        {getLocation(user.location)}
     </div>
 );
 
