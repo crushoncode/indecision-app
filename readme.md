@@ -1,4 +1,4 @@
-React is the last language we are learning in school. By the time we learn all the fundamentals and get some advanced knowledge, we are going to work on a huge team project by interacting with real clients(in July 2018). 
+React is what I am currently focused on. By the time we learn all the fundamentals and get some advanced knowledge, we are going to work on a huge team project by interacting with real clients(in July 2018). 
 
 Learning through Andrew Mead's the complete react web developer course with redux(https://www.udemy.com/react-2nd-edition) has been very helpful to understand how to build and launch a real-world React application. During my study with the resource, I've asked some industry mentors about the different way that they are doing at work compared with what's taught in the course.
 
