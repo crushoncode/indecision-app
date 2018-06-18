@@ -4,6 +4,14 @@ Learning through Andrew Mead's the complete react web developer course with redu
 
 Andrew is also providing good examples for understanding ES6 JavaScript. I've added some code I tested for practice and details to https://github.com/crushoncode/learning-js.
 
+# Learning Objectives 
+
+* Understand how GSX works and how to inject values in it
+* Add conditional rendering 
+* Set up event handlers like form submits and button clicks
+* Generate a dynamic set of elements based off of some application data
+* Render and re-render all of that keeping the UI up todate with our app data
+
 # To Get Started
 
 npm init -y
