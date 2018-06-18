@@ -1,4 +1,4 @@
-
+// constructor(argument = default value)
 class Person {
     constructor(name = 'Anonymous', age = 0)  {
         this.name = name;
@@ -14,8 +14,44 @@ class Person {
     }
 }
 
-const me = new Person('Serina Ko', 20);
-console.log(me.getDescription());
+class Student extends Person { 
+    constructor(name, age, major) {
+        super(name, age);
+        this.major = major;
+    }
+    hasMajor() {
+        return !!this.major; 
+    }
+    getDescription() {
+        let description = super.getDescription();
+        
+        if (this.hasMajor()) {
+            description += `Their major is ${this.major}.`;
+        }    
+        return description;
+    }
+}
 
-const other = new Person();
-console.log(other.getDescription());
+class Traveler extends Person  {
+    constructor(name, age, homeLocation) {
+        super(name, age);
+        this.homeLocation = homeLocation;
+    }
+    getGreeting() {
+        let greeting = super.getGreeting();
+
+        if(this.homeLocation) {
+            greeting += `I am visiting from ${this.homeLocation}.`;
+        }
+
+        return greeting;
+    }
+
+}   
+
+const me = new Traveler('Serina Ko', 20, 'Melbourne');
+console.log(me.getGreeting());
+
+const other = new Traveler(undefined, undefined, 'nowhere');
+console.log(other.getGreeting());
+
