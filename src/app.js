@@ -7,8 +7,20 @@ class IndecisionApp extends React.Component {
         this.handleDeleteOption = this.handleDeleteOption.bind(this)
         this.state = {
             options: props.options
- 
         };
+    }
+
+    componentDidMount() {
+        try {
+            const json = localStorage.getItem('options');
+            const options = JSON.parse(json);
+
+            if (options) {
+                this.setState(() => ({ options }));
+            }
+        } catch (e) {
+
+        }
     }
 
     handleDeleteOptions() {
