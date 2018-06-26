@@ -1,3 +1,9 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import 'normalize.css/normalize.css';
+import './css/styles.scss';
+
+
 class IndecisionApp extends React.Component {
     constructor(props) {
         super(props);
@@ -18,7 +24,7 @@ class IndecisionApp extends React.Component {
             if (options) {
                 this.setState(() => ({ options }));
             }
-        } catch (e) {
+        } catch (error) {
 
         }
     }
